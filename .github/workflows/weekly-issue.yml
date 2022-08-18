@@ -1,0 +1,20 @@
+# .github/workflows/weekly-issue.yml
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * MON' 
+name: Create an issue on schedule
+permissions:
+  contents: read
+  issues: write 
+jobs:
+  stuff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.issuecreate }}
+        with:
+          filename: .github/ISSUE_TEMPLATE/se-weekly-sync.md
+          title: Weekly Sync {{ date | date('dddd, MMMM Do') }}
