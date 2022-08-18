@@ -17,4 +17,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.issuecreate }}
         with:
           filename: .github/ISSUE_TEMPLATE/se-weekly-sync.md
-          title: Weekly Sync {{ date | date('dddd, MMMM Do') }}
