@@ -1,9 +1,9 @@
 ---
 name: SE Weekly Sync
 about: Initial template for weekly sync for SE
-title: ''
+title: 'Weekly Sync {{ date | date('dddd, MMMM Do') }}'
 labels: Weekly
-assignees: ''
+assignees: 'nielspineda'
 
 ---
 
