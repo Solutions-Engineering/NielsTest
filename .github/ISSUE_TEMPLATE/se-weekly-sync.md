@@ -1,6 +1,5 @@
 ---
-name: SE Weekly Sync
-about: Initial template for weekly sync for SE
+title: SE Weekly Sync
 assignees: nielspineda
 labels: Weekly
 ---
