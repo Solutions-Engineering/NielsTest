@@ -1,8 +1,9 @@
 on:
+  workflow_call:
   workflow_dispatch:
   schedule:
     - cron: '0 16 * * MON' 
-name: Create an issue on push
+name: Create SE Weekly Issue
 permissions:
   contents: read
   issues: write 
