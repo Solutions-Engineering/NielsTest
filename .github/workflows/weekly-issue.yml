@@ -15,5 +15,3 @@ jobs:
       - uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.issuecreate }}
-        with:
-          filename: .github/ISSUE_TEMPLATE/se-weekly-sync.md
