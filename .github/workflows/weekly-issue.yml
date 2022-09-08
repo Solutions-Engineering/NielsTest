@@ -15,3 +15,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # GITHUB_TOKEN: ${{ secrets.issuecreate }} 
+        with:
+          filename: .github/ISSUE_TEMPLATE/se-weekly-sync.md
